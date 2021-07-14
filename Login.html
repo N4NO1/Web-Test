@@ -1,0 +1,49 @@
+<html>
+<head>
+    <style>
+        #login-sep {
+            margin-top: 2pc;
+        }
+    </style>
+</head>
+<script>
+    function checkFields(){
+        if(!(document.getElementById("uname").value && document.getElementById("psw").value)) {
+            console.warn("no values",document.getElementById("uname").value,document.getElementById("psw").value)
+        } else{
+        console.log(document.getElementById("uname").value,document.getElementById("psw").value)
+        }
+    }
+    async function getAuth(user,pass){}
+</script>
+<body>
+    <center>
+    <div class="imgcontainer">
+      <img src="https://stok.ly/wp-content/uploads/2020/08/cropped-logo.jpg" alt="Avatar" class="avatar" style="width:75px;height: 40px">
+    </div>
+    <div class="container">
+        <div style:"login-sep">
+            <label for="uname"><b>Username</b></label>
+            <div>
+            <input type="text" placeholder="Enter Username" id="uname">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="psw"><b>Password</b></label>
+            </div>
+            <input type="password" placeholder="Enter Password" id="psw">
+        </div>
+        <div>
+            <button type="submit" onclick="checkFields()">Login</button>
+        </div>
+        <div>
+            <button type="button" class="cancelbtn">Cancel</button>
+        </div>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+</center>
+</body>
+</html>
